@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientWidget</class>
+ <widget class="QWidget" name="ClientWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ClientWidget</string>
+  </property>
+  <widget class="QGroupBox" name="groupBoxConnection">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>100</y>
+     <width>561</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Connexion au serveur</string>
+   </property>
+   <widget class="QLabel" name="labelAdresse">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Adresse IP du serveur :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPort">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>70</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Numéro de port du serveur :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelEtat">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Etat de la connexion</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonQuitter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quitter</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonConnexion">
+    <property name="geometry">
+     <rect>
+      <x>219</x>
+      <y>110</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connexion</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditAdresse">
+    <property name="geometry">
+     <rect>
+      <x>152</x>
+      <y>30</y>
+      <width>181</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>172.18.58.104</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPort">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>70</y>
+      <width>141</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1025</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditEtat">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>70</y>
+      <width>211</width>
+      <height>70</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxClient">
+   <property name="geometry">
+    <rect>
+     <x>139</x>
+     <y>260</y>
+     <width>561</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Informations Client</string>
+   </property>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>30</y>
+      <width>541</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButtonNom">
+         <property name="text">
+          <string>Nom de l'ordinateur distant</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonNomUtilisateur">
+         <property name="text">
+          <string>Nom de l'utilisateur</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonArchitecture">
+         <property name="text">
+          <string>Architecture processeur</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonOS">
+         <property name="text">
+          <string>OS de l'ordinateur</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="lineEditNom"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditNomUtilisateur"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditArchitecture"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditOS"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>ClientWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>219</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
